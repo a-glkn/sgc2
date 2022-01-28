@@ -1,0 +1,123 @@
+@import "vars"
+
+    
++media-breakpoint-down(lg) 
+    .heading
+        &_md
+            font-size: 40px
+    .header 
+        .phone
+            font-size: 24px
+    .footer 
+        .menu 
+            ul 
+                li 
+                    a
+                        font-size: 14px
+
+    .footer .footer-main .footer__right .phone
+        font-size: 20px
+    .footer .footer-main .footer__right a.action
+        font-size: 16px
+
+    .footer .footer-main .footer__right
+        width: 160px
++media-breakpoint-down(md)
+    body
+        padding-top: 67px
+    .header
+        height: 67px
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
+        background: #fff !important
+        .menu-toggler
+            display: block
+
+        .menu, .phone
+            display: none
+
+        .logo
+            width: 59px
+            height: 50px
+            position: absolute
+            top: 8.5px
+            left: 15px
+            img
+                width: 59px
+                height: 50px
+        
+    .menu-openned
+        .mobile-menu
+            display: block
+
+    .heading
+        &_md
+            font-size: 32px
+
+    .section-first p
+        font-size: 18px
+
+    .col-feature
+        margin-bottom: 20px
+
+    .section-example 
+        p
+            font-size: 20px
+
+    .form
+        padding-left: 40px
+        padding-right: 40px
+        padding-top: 30px
+        padding-bottom: 30px
+
+    .btn
+        height: 48px
+
+    .section-first .row
+        min-height: 480px
+
+    .footer 
+        padding-top: 30px
+        .menu__heading
+            margin-top: 20px
+        .footer-main
+            flex-direction: column
+            text-align: center
+
+    .footer .footer-main .footer__right
+        margin-top: 20px
+        text-align: center
+        margin-left: auto
+        margin-right: auto
+
+    .footer 
+        .footer-bottom
+            margin-top: 30px
+            text-align: center
+            flex-direction: column-reverse
+        .soc
+            margin-bottom: 30px
+            margin-left: auto
+            margin-right: auto
++media-breakpoint-down(sm)
+    .feature
+        &__title
+            font-size: 20px
+        &__text
+            font-size: 16px
+    .heading
+        &_md
+            font-size: 28px
+
+    .section-example 
+        p
+            font-size: 18px
+    .form
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 15px
+        padding-bottom: 15px
++media-breakpoint-down(xs)
+    
