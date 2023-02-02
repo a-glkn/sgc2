@@ -5,6 +5,8 @@
     .heading
         &_md
             font-size: 40px
+        &_sm
+            font-size: 36px
     .header 
         .phone
             font-size: 24px
@@ -22,6 +24,26 @@
 
     .footer .footer-main .footer__right
         width: 160px
+
+        
+    .food-slider
+        &__item
+            .play
+                left: 100px
+                top: 94px
+        .slick-arrow
+            left: 50%
+            &.slick-prev
+                margin-left: -460px
+            &.slick-next
+                margin-left: -460px + 413px
+
+        .slick-dots
+            margin-left: -460px
+
+    .footer
+        .disc
+            max-width: 460px
 +media-breakpoint-down(md)
     body
         padding-top: 67px
@@ -55,6 +77,8 @@
     .heading
         &_md
             font-size: 32px
+        &_sm
+            font-size: 28px
 
     .section-first p
         font-size: 18px
@@ -104,6 +128,65 @@
 
     .section-first
         background-position: center right
+
+    .section-first
+        position: relative
+        &:after
+            z-index: 1
+            content: ''
+            display: block
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background-color: rgba(255,255,255,0.7)
+        .container
+            position: relative
+            z-index: 2
+
+    .food-slider
+        &__item
+            .play
+                left: 100px
+                top: 94px
+        .slick-arrow
+            left: 50%
+            &.slick-prev
+                margin-left: -350px
+            &.slick-next
+                margin-left: -350px + 413px
+        .slick-dots
+            margin-left: -350px
+
+    .tab-headers
+        flex-direction: column
+        &__item
+            width: 100%
+            margin-bottom: 10px
+
+    .footer
+        .disc
+            margin-top: 20px
+            max-width: 100%
+
+        
+    .feedback
+        display: flex
+        background: #fff
+        flex-direction: column
+        &__left
+            min-width: 100%
+            max-width: 100%
+        &__rating
+        &__text
+            margin-top: 20px
+            padding-left: 0
+
+    .section-feedback
+        .heading-section
+            br
+                display: none
 +media-breakpoint-down(sm)
     .feature
         &__title
@@ -113,6 +196,8 @@
     .heading
         &_md
             font-size: 28px
+        &_sm
+            font-size: 26px
 
     .section-example 
         p
@@ -122,5 +207,33 @@
         padding-right: 20px
         padding-top: 15px
         padding-bottom: 15px
+
+    .food-slider
+        height: auto
+        
+        &__item
+            height: auto
+            padding-bottom: 200px
+            padding-top: 80px
+            .play
+                margin-top: 20px
+                left: 50%
+                margin-left: -25px
+                top: 0
+                position: relative
+        .slick-arrow
+            bottom: 80px
+            &.slick-prev
+                margin-left: 0
+                left: 20px
+            &.slick-next
+                margin-left: 0
+                left: auto
+                right: 20px
+        .slick-dots
+            width: 100%
+            left: 0
+            margin-left: 0
+            bottom: 100px
 +media-breakpoint-down(xs)
     

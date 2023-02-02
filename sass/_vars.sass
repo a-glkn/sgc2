@@ -28,6 +28,16 @@ $gutter: $grid-gutter-width
         line-height: 1.23
         color: #303844
 
+    &_sm
+        font-style: normal
+        font-weight: 500
+        font-size: 40px
+        line-height: 1.23
+        color: #303844
+
+.text-center
+    text-align: center
+
 .btn
     background: #3775EE
     border-radius: 30px
@@ -43,6 +53,11 @@ $gutter: $grid-gutter-width
     &_secondary
         color: #303844
         background: #F2F7FA
+    &_outline
+        border: 1px solid #3775EE
+        color: #303844
+        background: #F2F7FA
+        color: #3775EE
 
 
 
@@ -51,7 +66,7 @@ $gutter: $grid-gutter-width
     background-position: center
 
 .header
-    z-index: 100
+    z-index: 100000
     .container
         position: relative
     .menu
@@ -153,6 +168,22 @@ $gutter: $grid-gutter-width
         padding-bottom: 10px
         margin-bottom: 30px
 
+    &__select
+        width: 100%
+        height: 60px
+        border: 1px solid rgba(214, 219, 225, 1)
+        border-radius: 30px
+        padding-left: 20px
+        padding-right: 20px
+        margin-bottom: 30px
+        -webkit-appearance: none
+        -moz-appearance: none
+        color: #777B84
+        background-repeat: no-repeat
+        background-position: calc(100% - 25px) center
+        background-image: url(../img/arr.svg)
+
+        
 
 
 .mobile-menu
@@ -251,3 +282,169 @@ $gutter: $grid-gutter-width
             top: -8px
         &:after
             top: 8px
+
+
+.tab-headers
+    display: flex
+    justify-content: space-between
+    &__item
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 24px
+        text-align: center
+        color: #666B71
+        border: 1px solid rgba(102, 107, 113, 0.5)
+        border-radius: 30px
+        width: 221px
+        height: 60px
+        line-height: 60px
+        cursor: pointer
+        transition: .3s ease
+        &:hover
+            border: 1px solid #3775EE
+        &.active
+            background: rgba(55, 117, 238, 0.05)
+            border: 1px solid #3775EE
+            color: #3775EE
+
+.tab-contents__item
+    display: none
+    &.active
+        display: block
+
+.food-el
+    margin-top: 30px
+    img
+        max-width: 100%
+        height: auto
+        border-radius: 30px
+        filter: drop-shadow(16px 18px 20px rgba(194, 212, 222, 0.19))
+
+    &__title
+        margin-top: 10px
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 160%
+        text-align: center
+        color: #303844
+
+.food-slider
+    position: relative
+    height: 588px
+    &__item
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        height: 588px
+        padding-top: 145px
+        .heading
+            margin-bottom: .5em
+        .play
+            position: absolute
+            left: 100px
+            top: 94px
+            cursor: pointer
+    .slick-arrow
+        width: 50px
+        height: 50px
+        position: absolute
+        bottom: 145px
+        cursor: pointer
+        border: 0
+        z-index: 1001
+        border-radius: 50%
+        background-image: url(../img/arrow-left.svg)
+        text-indent: -9999px
+        background-color: transparent
+        left: 50%
+        &.slick-prev
+            margin-left: -560px
+        &.slick-next
+            transform: rotate(180deg)
+            margin-left: -560px + 413px
+
+    .slick-dots
+        width: 463px
+        height: 10px
+        position: absolute
+        z-index: 1000
+        display: flex
+        left: 50%
+        margin-left: -560px
+        bottom: 165px
+        justify-content: center
+        li
+            list-style: none
+            width: 10px
+            height: 10px
+            display: flex
+            margin-left: 3px
+            margin-right: 3px
+            button
+                border: 0
+                text-indent: -99999px
+                width: 8px
+                height: 8px
+                border-radius: 50%
+                margin: auto
+                background-color: rgba(55,117,238,.5)
+                transition: .3s ease
+            &.slick-active
+                button
+                    width: 10px
+                    height: 10px
+                    background-color: rgba(55,117,238,1)
+
+
+.member
+    &__img
+        img
+            max-width: 100%
+            height: auto
+            border-radius: 20px
+    &__name
+        margin-top: 20px
+        font-style: normal
+        font-weight: 600
+        font-size: 20px
+        line-height: 1.25
+        text-transform: capitalize
+        color: #303844
+    &__pos
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 138%
+        color: #303844
+        margin-top: 10px
+
+.feedback
+    display: flex
+    background: #fff
+    border: 5px solid #F2F7FA
+    border-radius: 20px
+    padding: 30px 20px
+    &__left
+        min-width: 280px
+        max-width: 280px
+    &__name
+        font-style: normal
+        font-weight: 700
+        font-size: 18px
+        line-height: 140%
+        color: #303844
+    &__rating
+        margin-top: 10px
+        display: flex
+        .star
+            margin-right: 10px
+    &__text
+        padding-left: 20px
+.star
+    width: 24px
+    height: 24px
+    background-repeat: no-repeat
+    background-position: center
+    background-image: url(../img/star.svg)
