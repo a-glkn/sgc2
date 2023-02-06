@@ -59,7 +59,12 @@ $gutter: $grid-gutter-width
         background: #F2F7FA
         color: #3775EE
 
+    &_green
+        background-color: #91BF29
+        
 
+.text-green
+    color: #91BF29 !important
 
 .bg-cover
     background-size: cover
@@ -448,3 +453,43 @@ $gutter: $grid-gutter-width
     background-repeat: no-repeat
     background-position: center
     background-image: url(../img/star.svg)
+
+.rub-banner
+    background: #FFFFFF
+    border-radius: 0px 0px 30px 30px
+    font-style: normal
+    font-weight: 400
+    font-size: 38px
+    line-height: 59px
+    color: #303844
+    padding: 30px
+    display: flex
+    width: auto
+    &__icon
+        width: 80px
+        height: 80px
+    &__text
+        margin: auto 0
+        margin-left: 20px
+
+.logo-group
+    position: relative
+    &:after
+        content: ''
+        display: block
+        position: absolute
+        height: 65px
+        width: 1px
+        left: 123px
+        top: 2.5px
+        background-color: rgba(48, 56, 68, 0.5)
+    a
+        text-decoration: none !important
+    .logo
+        margin-right: 40px
+    .logo-2
+        margin-left: 40px
+
+.bg-pale-orange
+    background-color: #FFFBF3
+

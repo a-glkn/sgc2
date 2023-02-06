@@ -44,6 +44,10 @@
     .footer
         .disc
             max-width: 460px
+
+    .section-profitable
+        .rub-banner
+            margin-left: -186px
 +media-breakpoint-down(md)
     body
         padding-top: 67px
@@ -69,7 +73,25 @@
             img
                 width: 59px
                 height: 50px
-        
+        .logo-group
+            position: absolute
+            top: 0
+            left: 15px
+            &:after
+                height: 45px
+                top: 10px
+                left: 94px
+            .logo
+                img
+                    width: 59px
+                    height: 50px
+            .logo-2
+                position: absolute
+                left: 69px
+                top: 8px
+                img
+                    width: 43px
+                    height: 50px
     .menu-openned
         .mobile-menu
             display: block
@@ -117,6 +139,9 @@
         margin-right: auto
 
     .footer 
+        .logo-group:after
+            left: 50%
+            margin-left: 10px
         .footer-bottom
             margin-top: 30px
             text-align: center
